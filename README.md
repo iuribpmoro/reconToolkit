@@ -1,6 +1,33 @@
-# bountyHunting
+# Recon Toolkit
+
+A reconnaissance toolkit for pentesters and bug hunters to gather IPs, subdomains, endpoints and CNAMEs.
 
 ## Scripts
+
+### Gather All URLs
+
+This one gathers URLs from Web Applications through both spidering (with Katana) and Wayback Machine (with waybackurls).
+Optionally, also allows to filter the outputed URLs so to see just the one's who matches some pattern related to Vulns (with gf patterns).
+
+#### Requirements
+
+- Katana
+  - ```go install github.com/projectdiscovery/katana/cmd/katana@latest```
+- WaybackURLs
+  - ```go install github.com/tomnomnom/waybackurls@latest```
+- Gf
+  - ```go install -v github.com/tomnomnom/gf@master ```
+- Anew
+  - ```go install -v github.com/tomnomnom/anew@latest```
+
+#### Usage
+
+```
+Usage: ./gatherAllUrls.sh <SUBS_LIST> [-vulns]
+```
+
+---
+
 
 ### Gather IPs - Passive
 
