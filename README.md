@@ -28,6 +28,17 @@ Usage: ./gatherAllUrls.sh <SUBS_LIST> [-vulns]
 
 ---
 
+### Gather CNAMEs
+
+Given a list of subdomains, it looks for which ones have DNS CNAME entries, so to give information for subdomain takeover investigation.
+
+#### Usage
+
+```
+Usage: ./gatherCnames.sh <SUBS_LIST>
+```
+
+---
 
 ### Gather IPs - Passive
 
