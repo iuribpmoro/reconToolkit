@@ -105,6 +105,26 @@ For example, given the blog URL https://attacker.com/blog/posts/pentest?post=som
 
 This last comparison takes into account the passed path ```/blog/posts/```, so the subdirectories or file inside of it are not taken into account.
 
+#### Usage
+
+```
+usage: uniqueUrls.py [-h] [-v [VALID_PATHS [VALID_PATHS ...]]] file_path
+
+This script will read a file containing one URL per line and outputs the
+unique URLs by comparing the hostname, path, and parameter names. An optional
+list of paths can be passed using -v flag and only applies the exclusion rule
+so when the path is passed, it disconsiders not only the last directory but
+all directories after what you specified.
+
+positional arguments:
+  file_path             Path to the file containing one URL per line
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v [VALID_PATHS [VALID_PATHS ...]], --valid_paths [VALID_PATHS [VALID_PATHS ...]]
+                        Paths to apply the exclusion rule
+```
+
 ---
 
 ### Gather IPs - Passive
