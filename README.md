@@ -36,6 +36,10 @@ Usage: ./gatherAllUrls.sh <SUBS_LIST> [-vulns]
 
 Given a list of subdomains, it looks for which ones have DNS CNAME entries, so to give information for subdomain takeover investigation.
 
+#### Requirements
+
+No requirements.
+
 #### Usage
 
 ```
@@ -104,6 +108,10 @@ For example, given the blog URL https://attacker.com/blog/posts/pentest?post=som
 | https://attacker.com/blog/posts/cloud?post=some&other=else  | Yes  | Same host, path and params  |
 
 This last comparison takes into account the passed path ```/blog/posts/```, so the subdirectories or file inside of it are not taken into account.
+
+#### Requirements
+
+No requirements.
 
 #### Usage
 
