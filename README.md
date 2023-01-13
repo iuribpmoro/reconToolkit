@@ -8,6 +8,14 @@ This toolkit also contains a controller.sh script, with an interactive menu that
 
 ## Scripts
 
++ [Gather All URLs](#gather-all-urls)
++ [Gather CNAMEs](#gather-cnames)
++ [Gather Subdomains](#gather-subdomains)
++ [Unique URLs](#unique-urls)
++ [Gather IPs - Passive](#gather-ips---passive)
+
+-----
+
 ### Gather All URLs
 
 This one gathers URLs from Web Applications through both spidering (with Katana) and Wayback Machine (with waybackurls).
