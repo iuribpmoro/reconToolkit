@@ -51,6 +51,7 @@ else
             cat wayback-tmp.txt | anew finalUrls.txt > /dev/null
         fi
         cat finalUrls.txt | grep -Ev "jpg|jpeg|png|svg|ico|mp4|gif|css|js" | anew finalFilteredUrls.txt > /dev/null
+	cat finalUrls.txt | grep "\.js" | anew finalJsUrls.txt > /dev/null
         current=$(( $current + 1))
     done
 
